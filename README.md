@@ -9,7 +9,7 @@
 [!\[Rust\](https://img.shields.io/badge/Rust-1.78+-DEA584?style=flat\&logo=rust null)](https://www.rust-lang.org/)
 [!\[License\](https://img.shields.io/badge/License-MIT-blue.svg null)](LICENSE)
 
-**企业级视频流媒体平台，提供 Go、Java、Rust 三种语言实现**
+**视频流媒体平台，提供 Go、Java、Rust 三种语言实现**
 
 [项目简介](#-项目简介) •
 [功能特性](#-功能特性) •
