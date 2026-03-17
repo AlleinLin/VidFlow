@@ -1,0 +1,18 @@
+E:\项目\视频网站\video-platform-rust\target\debug\deps\aws_types-f69c52e81547f13c.d: C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\lib.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\app_name.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\build_metadata.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\endpoint_config.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\origin.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\os_shim_internal.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\region.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\request_id.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\sdk_config.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\service_config.rs E:\项目\视频网站\video-platform-rust\target\debug\build\aws-types-3adb23c71ed6b3c0\out/build_env.rs
+
+E:\项目\视频网站\video-platform-rust\target\debug\deps\libaws_types-f69c52e81547f13c.rmeta: C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\lib.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\app_name.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\build_metadata.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\endpoint_config.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\origin.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\os_shim_internal.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\region.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\request_id.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\sdk_config.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\service_config.rs E:\项目\视频网站\video-platform-rust\target\debug\build\aws-types-3adb23c71ed6b3c0\out/build_env.rs
+
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\lib.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\app_name.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\build_metadata.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\endpoint_config.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\origin.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\os_shim_internal.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\region.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\request_id.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\sdk_config.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.14\src\service_config.rs:
+E:\项目\视频网站\video-platform-rust\target\debug\build\aws-types-3adb23c71ed6b3c0\out/build_env.rs:
+
+# env-dep:CARGO_PKG_VERSION=1.3.14
+# env-dep:OUT_DIR=E:\\项目\\视频网站\\video-platform-rust\\target\\debug\\build\\aws-types-3adb23c71ed6b3c0\\out

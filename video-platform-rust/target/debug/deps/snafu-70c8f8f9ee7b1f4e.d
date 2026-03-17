@@ -1,0 +1,12 @@
+E:\项目\视频网站\video-platform-rust\target\debug\deps\snafu-70c8f8f9ee7b1f4e.d: C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\lib.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\backtrace_inert.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\once_bool.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\error_chain.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\Snafu.md C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.md C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\../README.md
+
+E:\项目\视频网站\video-platform-rust\target\debug\deps\libsnafu-70c8f8f9ee7b1f4e.rmeta: C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\lib.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\backtrace_inert.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\once_bool.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\error_chain.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.rs C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\Snafu.md C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.md C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\../README.md
+
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\lib.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\backtrace_inert.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\once_bool.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\error_chain.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.rs:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\Snafu.md:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\report.md:
+C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\snafu-0.7.5\src\../README.md:

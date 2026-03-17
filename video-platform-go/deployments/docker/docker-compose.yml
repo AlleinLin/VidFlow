@@ -1,0 +1,161 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build:
+      context: .
+      dockerfile: deployments/docker/Dockerfile.api-gateway
+    environment:
+      - SERVER_NAME=api-gateway
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8080
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=video_platform
+      - DB_SSLMODE=disable
+      - REDIS_ADDR=redis:6379
+      - JWT_SECRET=your-super-secret-key-at-least-32-characters-long
+      - JWT_ACCESS_TOKEN_TTL=15m
+      - JWT_REFRESH_TOKEN_TTL=168h
+      - LOG_LEVEL=info
+      - LOG_FORMAT=json
+      - STORAGE_OUTPUT_DIR=/data/transcoded
+      - STORAGE_FFMPEG_PATH=ffmpeg
+      - STORAGE_FFPROBE_PATH=ffprobe
+    depends_on:
+      - postgres
+      - redis
+
+    networks:
+      - video-network
+
+  user-service:
+    build:
+      context: ./cmd/user-service
+      dockerfile: deployments/docker/Dockerfile.user-service
+    environment:
+      - SERVER_NAME=user-service
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8081
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=video_platform
+      - DB_SSLMODE=disable
+      - REDIS_ADDR=redis:6379
+      - JWT_SECRET=your-super-secret-key-at-least-32-characters-long
+      - JWT_ACCESS_TOKEN_TTL=15m
+      - JWT_REFRESH_TOKEN_TTL=168h
+      - LOG_LEVEL=info
+      - LOG_FORMAT=json
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - video-network
+
+  video-service:
+    build:
+      context: ./cmd/video-service
+      dockerfile: deployments/docker/Dockerfile.video-service
+    environment:
+      - SERVER_NAME=video-service
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8082
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=video_platform
+      - DB_SSLMODE=disable
+      - REDIS_ADDR=redis:6379
+      - JWT_SECRET=your-super-secret-key-at-least-32-characters-long
+      - LOG_LEVEL=info
+      - LOG_FORMAT=json
+      - STORAGE_OUTPUT_DIR=/data/transcoded
+      - STORAGE_FFMPEG_PATH=ffmpeg
+      - STORAGE_FFPROBE_PATH=ffprobe
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - video-network
+
+  transcode-service:
+    build:
+      context: ./cmd/transcode-service
+      dockerfile: deployments/docker/Dockerfile.transcode-service
+    environment:
+      - SERVER_NAME=transcode-service
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8083
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=video_platform
+      - DB_SSLMODE=disable
+      - LOG_LEVEL=info
+      - LOG_FORMAT=json
+      - STORAGE_OUTPUT_DIR=/data/transcoded
+      - STORAGE_FFMPEG_PATH=ffmpeg
+      - STORAGE_FFPROBE_PATH=ffprobe
+      - STORAGE_MAX_WORKERS=4
+      - STORAGE_SEGMENT_DURATION=6
+    depends_on:
+      - postgres
+    volumes:
+      - transcoded-data:/data/transcoded
+    networks:
+      - video-network
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=video_platform
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - video-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis-data:/data
+    networks:
+      - video-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    volumes:
+      - minio-data:/data
+    networks:
+      - video-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  video-network:
+    driver: bridge

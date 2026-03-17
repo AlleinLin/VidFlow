@@ -1,0 +1,192 @@
+   2.452030500s  INFO prepare_target{force=false package_id=video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust) target="video-platform-rust"}: cargo::core::compiler::fingerprint: fingerprint error for video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust)/Check { test: false }/TargetInner { name: "video-platform-rust", doc: true, ..: with_path("E:\\项目\\视频网站\\video-platform-rust\\src\\main.rs", Edition2021) }
+   2.452187700s  INFO prepare_target{force=false package_id=video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust) target="video-platform-rust"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\项目\视频网站\video-platform-rust\target\debug\.fingerprint\video-platform-rust-6267c42a1b27230b\bin-video-platform-rust`
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   3.317697700s  INFO prepare_target{force=false package_id=rdkafka v0.36.2 target="rdkafka"}: cargo::core::compiler::fingerprint: fingerprint error for rdkafka v0.36.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rdkafka", ["lib"], "C:\\Users\\chysd\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rdkafka-0.36.2\\src\\lib.rs", Edition2018) }
+   3.317785700s  INFO prepare_target{force=false package_id=rdkafka v0.36.2 target="rdkafka"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\项目\视频网站\video-platform-rust\target\debug\.fingerprint\rdkafka-ad5c95856bc80b8a\lib-rdkafka`
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   3.320145800s  INFO prepare_target{force=false package_id=rdkafka-sys v4.10.0+2.12.1 target="rdkafka_sys"}: cargo::core::compiler::fingerprint: fingerprint error for rdkafka-sys v4.10.0+2.12.1/Check { test: false }/TargetInner { ..: lib_target("rdkafka_sys", ["lib"], "C:\\Users\\chysd\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rdkafka-sys-4.10.0+2.12.1\\src\\lib.rs", Edition2021) }
+   3.320210700s  INFO prepare_target{force=false package_id=rdkafka-sys v4.10.0+2.12.1 target="rdkafka_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\项目\视频网站\video-platform-rust\target\debug\.fingerprint\rdkafka-sys-2f32bc50a303b643\lib-rdkafka_sys`
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   3.360515000s  INFO prepare_target{force=false package_id=rdkafka-sys v4.10.0+2.12.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rdkafka-sys v4.10.0+2.12.1/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "C:\\Users\\chysd\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rdkafka-sys-4.10.0+2.12.1\\build.rs", Edition2021) }
+   3.360585200s  INFO prepare_target{force=false package_id=rdkafka-sys v4.10.0+2.12.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\项目\视频网站\video-platform-rust\target\debug\.fingerprint\rdkafka-sys-618e5f6c627b8ac1\run-build-script-build-script-build`
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   3.530800200s  INFO prepare_target{force=false package_id=video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust) target="video-platform-rust"}: cargo::core::compiler::fingerprint: fingerprint error for video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust)/Check { test: true }/TargetInner { name: "video-platform-rust", doc: true, ..: with_path("E:\\项目\\视频网站\\video-platform-rust\\src\\main.rs", Edition2021) }
+   3.530942900s  INFO prepare_target{force=false package_id=video-platform-rust v1.0.0 (E:\项目\视频网站\video-platform-rust) target="video-platform-rust"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\项目\视频网站\video-platform-rust\target\debug\.fingerprint\video-platform-rust-17d9ec13677ece52\test-bin-video-platform-rust`
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   Compiling rdkafka-sys v4.10.0+2.12.1
+error: failed to run custom build command for `rdkafka-sys v4.10.0+2.12.1`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `E:\项目\视频网站\video-platform-rust\target\debug\build\rdkafka-sys-a60bcccc416cf3f8\build-script-build` (exit code: 101)
+  --- stdout
+  Cloning librdkafka
+
+  --- stderr
+  Building and linking librdkafka statically
+  Running command: "cp -a librdkafka/. E:\项目\视频网站\video-platform-rust\target\debug\build\rdkafka-sys-618e5f6c627b8ac1\out" in dir: .
+
+  thread 'main' (20588) panicked at C:\Users\chysd\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rdkafka-sys-4.10.0+2.12.1\build.rs:38:19:
+  Command failed with error: program not found
+  stack backtrace:
+     0: std::panicking::panic_handler
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\panicking.rs:689
+     1: core::panicking::panic_fmt
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\core\src\panicking.rs:80
+     2: __ImageBase
+     3: __ImageBase
+     4: build_script_build::main
+     5: std::rt::lang_start
+     6: std::rt::lang_start
+     7: std::rt::lang_start
+     8: std::rt::lang_start_internal::closure$0
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\rt.rs:175
+     9: std::panicking::catch_unwind::do_call
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\panicking.rs:581
+    10: std::panicking::catch_unwind
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\panicking.rs:544
+    11: std::panic::catch_unwind
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\panic.rs:359
+    12: std::rt::lang_start_internal
+               at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library\std\src\rt.rs:171
+    13: std::rt::lang_start
+    14: main
+    15: invoke_main
+               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+    16: __scrt_common_main_seh
+               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+    17: BaseThreadInitThunk
+    18: RtlUserThreadStart
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

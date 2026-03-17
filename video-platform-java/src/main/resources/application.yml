@@ -1,0 +1,96 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: video-platform-java
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/video_platform
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 100
+      minimum-idle: 10
+      idle-timeout: 300000
+      connection-timeout: 20000
+      max-lifetime: 1200000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        default_batch_fetch_size: 100
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 
+      database: 0
+      lettuce:
+        pool:
+          max-active: 100
+          max-idle: 10
+          min-idle: 5
+
+    cassandra:
+      keyspace-name: video_platform
+      contact-points: localhost
+      port: 9042
+      local-datacenter: datacenter1
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: video-platform-java
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+      properties:
+        spring.json.trusted.packages: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  tracing:
+    sampling:
+      probability: 0.1
+
+jwt:
+  secret: your-super-secret-key-change-in-production-must-be-at-least-256-bits
+  access-token-ttl: 15m
+  refresh-token-ttl: 168h
+  issuer: video-platform
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: video-platform
+
+logging:
+  level:
+    root: INFO
+    com.videoplatform: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
